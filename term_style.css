@@ -1,3 +1,4 @@
+
 .terminal-box {
     background-color: #1a1a1a; /* Dark background */
     border-radius: 8px;
@@ -37,6 +38,10 @@
   .terminal-body {
     padding: 15px;
   }
+
+  .terminal-line {
+    display: flex;
+  }
   
   .prompt {
     color: #00ff00; /* Green for the prompt */
@@ -49,8 +54,7 @@
     outline: none;
     color: #00ff00; /* Green for input text */
     caret-color: #00ff00; /* Blinking cursor color */
-    width: calc(100% - 20px); /* Adjust width to fit prompt */
-    display: inline-block; /* Important for contenteditable div */
+    flex-grow: 1;
     white-space: pre-wrap; /* Preserve whitespace and wrap text */
   }
   
