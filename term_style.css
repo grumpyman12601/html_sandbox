@@ -1,0 +1,65 @@
+.terminal-box {
+    background-color: #1a1a1a; /* Dark background */
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Courier New', monospace; /* Monospaced font */
+    color: #00ff00; /* Green text for a classic terminal look */
+    width: 600px; /* Adjust as needed */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .terminal-header {
+    background-color: #333;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  
+  .red { background-color: #ff5f56; }
+  .yellow { background-color: #ffbd2e; }
+  .green { background-color: #27c93f; }
+  
+  .title {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-left: auto;
+  }
+  
+  .terminal-body {
+    padding: 15px;
+  }
+  
+  .prompt {
+    color: #00ff00; /* Green for the prompt */
+    margin-right: 5px;
+  }
+  
+  .terminal-input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #00ff00; /* Green for input text */
+    caret-color: #00ff00; /* Blinking cursor color */
+    width: calc(100% - 20px); /* Adjust width to fit prompt */
+    display: inline-block; /* Important for contenteditable div */
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  }
+  
+  /* Optional: Blinking cursor animation for contenteditable div */
+  .terminal-input:focus {
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-right-color: transparent }
+    50% { border-right-color: #00ff00; }
+  }
